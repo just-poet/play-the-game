@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#253c3e">
+<title>Play the Game</title>
+<style>/*GAME_STYLE*/</style>
+</head>
+<body>
+<main id="game">
+  <div id="viewport" aria-label="3D game"></div>
+  <div class="wash" aria-hidden="true"></div>
+  <header class="top">
+    <div class="actions">
+      <button id="sound" class="icon-button" type="button" aria-label="Mute sound" title="Toggle sound" aria-pressed="true">♫</button>
+      <button id="pause" class="icon-button" type="button" aria-label="Pause game" title="Pause game" hidden>Ⅱ</button>
+    </div>
+  </header>
+  <aside id="hud" hidden aria-label="Route progress">
+    <div class="hud-line"><span id="location"></span><span id="meters"></span></div>
+    <progress id="progress" max="400" value="0" aria-label="Distance traveled"></progress>
+  </aside>
+  <div id="lyrics" class="lyrics" aria-label="Song lyrics" hidden></div>
+  <audio id="stage-music" preload="metadata" hidden></audio>
+  <div id="guide" class="guide" aria-live="polite" hidden></div>
+  <div id="desktop-controls" class="desktop-controls" hidden></div>
+  <nav id="touch-controls" class="touch-controls" aria-label="Game controls" hidden>
+    <button type="button" data-key="ArrowLeft" aria-label="Left">←</button>
+    <button type="button" data-key="ArrowRight" aria-label="Right">→</button>
+    <button type="button" data-key="ArrowDown" aria-label="Back">↓</button>
+    <button type="button" data-key="ArrowUp" id="up-control" aria-label="Jump">↑</button>
+  </nav>
+  <section id="dialog" class="dialog" aria-labelledby="line" hidden>
+    <div class="tiny" id="chapter"></div>
+    <h1 id="line"></h1>
+    <p id="detail"></p>
+    <div class="choices" id="choices"></div>
+  </section>
+  <button id="lake-note-button" class="lake-note-button" type="button" hidden>Read the note</button>
+  <footer id="intro-footer" class="intro-footer" hidden>
+    <span>I love youuuu</span>
+  </footer>
+  <div id="fade" aria-hidden="true"></div>
+</main>
+<!--MUSIC_ASSETS-->
+<script>/*GAME_SCRIPT*/</script>
+</body>
+</html>

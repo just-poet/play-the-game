@@ -1,0 +1,1 @@
+{"name":"play-the-game","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node build.mjs"},"dependencies":{"@fontsource-variable/dm-sans":"5.3.0","@fontsource/dm-serif-text":"5.3.0","esbuild":"0.28.2","three":"0.187.0"}}
